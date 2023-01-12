@@ -57,6 +57,15 @@
   line-height: 160%;
 }
 
+.header-menu__items-link{
+  color: #000000;
+}
+.header-menu__items-link:hover{
+  color: #3f3029;
+  text-decoration:underline #ddbe0cde;
+  
+}
+
 .page-start {
   padding-bottom: 30px;
 }
@@ -76,9 +85,38 @@
 .page-title {
   padding: 25px 0;
   font-size: 3em;
+  animation-duration: 3s;
+  animation-name: slideFromLeft;
 }
+
+@keyframes slideFromLeft {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .start__subtitle {
   font-size: 1.5em;
+  animation-duration: 3s;
+  animation-name: slideFromRight;
+}
+
+@keyframes slideFromRight {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .about-me {
@@ -112,6 +150,7 @@
 .about-me__subtitle {
   font-size: 1.3em;
   line-height: 160%;
+
 }
 .about-me-first__subtitle {
 }
@@ -138,7 +177,6 @@
 .education-item {
   width: 300px;
   height: 240px;
-  border: 1px solid #c8bab1f5;
   border-radius: 10px;
   margin: 0 auto 25px auto;
   transition: 0.5s;
