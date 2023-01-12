@@ -1,35 +1,34 @@
+const header = document.querySelector(".header");
+const iconMenu = document.querySelector(".menu__icon");
+const headerMenu = document.querySelector(".header__menu");
+const headerLogo = document.querySelector(".header__logo");
+const wrapper = document.querySelector(".wrapper");
 const menuLinks = document.querySelectorAll(
-  ".header-menu__items-link[data-goto]"
+  ".header-menu__items-link"
 );
-if (menuLinks.length > 0) {
-  menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener("click", onMenuLinkClick);
-  });
-  /**плавный переход по ссылке */
-  function onMenuLinkClick(e) {
-    const menuLink = e.target;
-    if (
-      menuLink.dataset.goto &&
-      document.querySelector(menuLink.dataset.goto)
-    ) {
-      const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue = gotoBlock.getBoundingClientRect().top;
 
-/*       if (iconMenu.classList.contains("_active")) {
-        document.body.classList.remove("_lock");
-        iconMenu.classList.remove("_active");
-        headerMenu.classList.remove("_active");
-        header.classList.remove("_lock");
-        makeFriends.classList.remove("_lock");
-        headerLogo.classList.remove("_lock");
-        knowRest.classList.remove("_lock");
-        helpShelter.classList.remove("_lock");
-      } */
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: "smooth",
-      });
-      e.preventDefault();
-    }
+if (iconMenu) {
+  iconMenu.addEventListener("click", function () {
+    document.body.classList.toggle("_lock");
+    iconMenu.classList.toggle("_active");
+    headerMenu.classList.toggle("_active");
+    headerLogo.classList.toggle("_lock");
+    wrapper.classList.toggle("_lock");
+  });
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener("click", function () {
+    document.body.classList.toggle("_lock");
+    iconMenu.classList.toggle("_active");
+    headerMenu.classList.toggle("_active");
+    headerLogo.classList.toggle("_lock");
+    wrapper.classList.toggle("_lock");
   }
+  )
+})
 }
+
+
+
+
+console.log(menuLinks)
+
