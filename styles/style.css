@@ -1,0 +1,245 @@
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background: #c8bab1a4;
+  max-height: 908px;
+}
+
+.header-container {
+  padding: 30px 10px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__body {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  position: relative;
+}
+.burger__logo {
+  display: none;
+}
+.header-logo__title {
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.menu__icon {
+  display: none;
+}
+.header-menu__list {
+  width: 460px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu__items {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.page-start {
+  padding-bottom: 30px;
+}
+
+.start__body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main_image {
+  border: 3px solid #976363be;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.page-title {
+  padding: 25px 0;
+  font-size: 3em;
+}
+.start__subtitle {
+  font-size: 1.5em;
+}
+
+.about-me {
+  background: #c4d0dc9c;
+}
+.page-container {
+  padding: 80px 0 100px 0;
+}
+.about-me-container {
+  max-width: 1200px;
+  padding: 30px 10px 50px;
+}
+
+.about-me-body {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 408px;
+}
+.about-me__image {
+  margin: auto 0 auto 50px;
+  width: 50%;
+}
+.about-me__certificate {
+  display: block;
+  max-width: 100%;
+}
+.about-me__text {
+  width: 50%;
+}
+
+.about-me__subtitle {
+  font-size: 1.3em;
+  line-height: 160%;
+}
+.about-me-first__subtitle {
+}
+
+.my-education {
+  background: #c8bab1a4;
+}
+
+.education-body {
+  padding: 0 20px;
+}
+
+.education-title {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.education-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.education-item {
+  width: 300px;
+  height: 240px;
+  border: 1px solid #c8bab1f5;
+  border-radius: 10px;
+  margin: 0 auto 25px auto;
+  transition: 0.5s;
+}
+
+.education-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 30px 10px #c8bab1f5;
+  transition: 0.5s;
+}
+
+.education-item-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.education-item-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+
+.education-item-subtitle {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.education-item-years {
+  margin: 15px 0;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.skills-section {
+  background: #c4d0dc9c;
+}
+
+.skills__title {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.skills__item {
+  width: 100px;
+  height: 100px;
+  margin: 0 15px 15px 0;
+}
+
+.my__skills-img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background: #3d4961a2;
+  padding: 0 20px;
+}
+
+.contacts-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.contacts-item {
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.contacts-item:hover {
+  font-size: 1.8em;
+  transition: 0.5s;
+}
+
+.contacts-github,
+.contacts-linkedin {
+  width: 100px;
+  height: 100px;
+}
+.contacts-github:hover,
+.contacts-linkedin:hover {
+  transition: 0.5s;
+}
+.img__github,
+.img__linkedin {
+  width: 100%;
+  height: 100%;
+}
