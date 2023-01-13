@@ -170,8 +170,8 @@
 }
 
 .education-item {
-  width: 300px;
-  height: 240px;
+  width: 330px;
+  height: 305px;
   border-radius: 10px;
   margin: 0 auto 25px auto;
   transition: 0.5s;
@@ -199,12 +199,26 @@
 .education-item-subtitle {
   font-size: 1.4em;
   font-weight: 600;
+  padding-top: 15px;
 }
 
 .education-item-years {
   margin: 15px 0;
   font-size: 1.3em;
   font-style: italic;
+}
+
+.js-certificate-link,
+.angular-certificate-link {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #5f88db;
+}
+
+.js-certificate-link:hover,
+.angular-certificate-link:hover {
+  color: #094bd1;
+  transition: 0.5s;
 }
 
 .skills-section {
@@ -236,6 +250,124 @@
   height: 100%;
 }
 
+.projects-section {
+  background-color: #c8bab1a4;
+}
+
+#slider {
+  position: relative;
+  text-align: center;
+  top: 50px;
+}
+#slider {
+  margin: 0 auto;
+}
+#slider article {
+  width: 20%;
+  float: left;
+}
+
+#slider .image {
+  width: 500%;
+  line-height: 0;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 50%;
+}
+
+#desctop:checked ~ #slider {
+  max-width: 1180px;
+}
+label,
+a {
+  cursor: pointer;
+}
+.slider-wrapper input {
+  display: none;
+}
+.text {
+  font-size: 20px;
+}
+
+#switch1:checked ~ #slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+  margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image {
+  margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image {
+  margin-left: -400%;
+}
+
+#controls {
+  margin: -25% 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+
+#active label {
+  border-radius: 50%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: rgba(196, 191, 191, 0.911);
+  margin-right: 20px;
+}
+
+.active__bottom {
+  margin: 5% 10% 0 10%;
+}
+
+#active {
+  margin-left: 60%;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+}
+
+#active label:hover {
+  background: #faf9c9;
+  border-color: rgb(207, 207, 207);
+}
+#active label:hover:active {
+  background: #3d4961a2;
+}
+
+#switch1:checked ~ .active__bottom label:nth-child(1),
+#switch2:checked ~ .active__bottom label:nth-child(2),
+#switch3:checked ~ .active__bottom label:nth-child(3),
+#switch4:checked ~ .active__bottom label:nth-child(4) {
+  background: #3d4961a2;
+  border-color: #fbff00;
+}
+
+#slides .image {
+  transition: all 800ms cubic-bezier(0.42, 0, 1, 1);
+}
+
+#controls label:hover {
+  opacity: 0.6;
+}
+
+#controls label {
+  transition: opacity 0.2s ease-out;
+}
+
 .footer {
   background: #3d4961a2;
   padding: 0 20px;
@@ -260,8 +392,14 @@
   transition: 0.5s;
 }
 
-.contacts-item:hover {
-  font-size: 1.8em;
+.text__phone,
+.text__email {
+  color: black;
+}
+
+.text__phone:hover,
+.text__email:hover {
+  color: rgb(240, 218, 218);
   transition: 0.5s;
 }
 
@@ -273,6 +411,8 @@
 
 .contacts-github:hover,
 .contacts-linkedin:hover {
+  box-shadow: 0px 1px 20px 5px #535353f5;
+  border-radius: 50%;
   transition: 0.5s;
 }
 
