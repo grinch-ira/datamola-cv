@@ -8,7 +8,6 @@
 .header {
   width: 100%;
   background: #c8bab1a4;
-  max-height: 908px;
 }
 
 .header-container {
@@ -57,13 +56,12 @@
   line-height: 160%;
 }
 
-.header-menu__items-link{
+.header-menu__items-link {
   color: #000000;
 }
-.header-menu__items-link:hover{
+.header-menu__items-link:hover {
   color: #3f3029;
-  text-decoration:underline #ddbe0cde;
-  
+  text-decoration: underline #ddbe0cde;
 }
 
 .page-start {
@@ -150,9 +148,6 @@
 .about-me__subtitle {
   font-size: 1.3em;
   line-height: 160%;
-
-}
-.about-me-first__subtitle {
 }
 
 .my-education {
@@ -229,6 +224,7 @@
   margin: 0 auto;
   flex-wrap: wrap;
 }
+
 .skills__item {
   width: 100px;
   height: 100px;
@@ -255,6 +251,7 @@
   justify-content: space-between;
   margin-bottom: 25px;
 }
+
 .contacts-item {
   font-size: 1.6em;
   display: flex;
@@ -262,6 +259,7 @@
   justify-content: center;
   transition: 0.5s;
 }
+
 .contacts-item:hover {
   font-size: 1.8em;
   transition: 0.5s;
@@ -272,19 +270,19 @@
   width: 100px;
   height: 100px;
 }
+
 .contacts-github:hover,
 .contacts-linkedin:hover {
   transition: 0.5s;
 }
+
 .img__github,
 .img__linkedin {
   width: 100%;
   height: 100%;
 }
 
-
 @media (max-width: 768px) and (min-width: 320px) {
-
   body._lock {
     overflow: hidden;
     background: #29292999;
@@ -295,7 +293,6 @@
     padding: 30px 0 60px 0;
     margin: 0 0 0 10px;
   }
-
 
   .header__logo._lock {
     display: none;
@@ -367,7 +364,7 @@
 
   .menu__icon::before,
   .menu__icon::after {
-    content: "";
+    content: '';
   }
 
   .menu__icon::before {
@@ -434,7 +431,7 @@
 
   .menu__icon::before,
   .menu__icon::after {
-    content: "";
+    content: '';
   }
 
   .menu__icon::before {
@@ -450,4 +447,52 @@
     transform: scale(1) translate((0px, -50%));
   }
 
+  .page-title {
+    padding: 15px 0;
+    font-size: 2em;
+  }
+  .page-container {
+    padding: 40px 0 50px 0;
+  }
+
+  .start-body__image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .start__body {
+    flex-direction: column-reverse;
+  }
+
+  .start-body__text {
+    margin: 0 0 15px 55px;
+  }
+
+  .about-me-body {
+    flex-direction: column-reverse;
+  }
+
+  .about-me__text {
+    width: 100%;
+    padding: 0 10px 25px 25px;
+  }
+
+  .about-me__image {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+  }
+
+  .contacts-item {
+    margin-bottom: 15px;
+  }
+
+  .contacts-github,
+  .contacts-linkedin {
+    width: 50px;
+    height: 50px;
+  }
 }
