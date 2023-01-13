@@ -61,9 +61,9 @@
               </div>
               <div class="start-body__text">
                 <div class="start__title page-title">Hryniuk Iryna</div>
-                <div class="start__subtitle">
+                <h3 class="start__subtitle">
                   trainee | junior angular front-end developer
-                </div>
+                </h3>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
                 />
               </div>
               <div class="about-me__text">
-                <div class="about-me__title page-title">About me</div>
+                <h2 class="about-me__title page-title">About me</h2>
                 <div class="about-me__subtitle">
                   <p class="about-me-first__subtitle">
                     Graduated from the BNTU Faculty of Information Technology
@@ -105,7 +105,7 @@
         <section id="education" class="my-education page-container">
           <div class="education-container container">
             <div class="education-body">
-              <div class="education-title page-title">Education</div>
+              <h2 class="education-title page-title">Education</h2>
               <div class="education-list">
                 <div class="education-item">
                   <div class="education-item-container">
@@ -148,11 +148,27 @@
                     <div class="education-item-years">
                       April 2022-September 2022
                     </div>
+                    <div class="education-item-certificate">
+                      <a
+                        class="js-certificate-link"
+                        href="https://app.rs.school/certificate/xr1bsqwi"
+                        target="_blank"
+                        >Link to certificate</a
+                      >
+                    </div>
                     <div class="education-item-subtitle">
                       Angular 2022Q3 (JavaScript)
                     </div>
                     <div class="education-item-years">
                       September 2022 - December 2022
+                    </div>
+                    <div class="education-item-certificate">
+                      <a
+                        class="angular-certificate-link"
+                        href="https://app.rs.school/certificate/l8rxvq1h"
+                        target="_blank"
+                        >Link to certificate</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -163,7 +179,7 @@
         <section id="skills" class="skills-section page-container">
           <div class="skills-container container">
             <div class="skills-body">
-              <div class="skills__title page-title">My skills</div>
+              <h2 class="skills__title page-title">My skills</h2>
               <div class="skills-list">
                 <div class="skills__item skill_js">
                   <img
@@ -239,11 +255,75 @@
             </div>
           </div>
         </section>
+        <section id="projects" class="projects-section page-container">
+          <div class="projects-container container">
+            <div class="projects-body">
+              <h2 class="projects-title page-title">My projects</h2>
+              <h3>Click on the image to go to the project</h3>
+              <div class="slider-wrapper">
+                <input checked type="radio" name="respond" id="desktop" />
+                <article id="slider">
+                  <input checked type="radio" name="slider" id="switch1" />
+                  <input type="radio" name="slider" id="switch2" />
+                  <input type="radio" name="slider" id="switch3" />
+                  <input type="radio" name="slider" id="switch4" />
+
+                  <div id="slides">
+                    <div id="overflow">
+                      <div class="image">
+                        <article class="mem-one">
+                          <a
+                            href="https://grinch-ira.github.io/rslang/rslang/"
+                            target="_blank"
+                          >
+                            <img src="assets/img/rslang.PNG" alt="RSLang"
+                          /></a>
+                        </article>
+                        <article>
+                          <a
+                            href="https://p-management.netlify.app/welcome"
+                            target="_blank"
+                            ><img src="assets/img/pma.PNG" alt="PMA"
+                          /></a>
+                        </article>
+                        <article>
+                          <a
+                            href="https://grinch-ira.github.io/virtual-keyboard/"
+                            target="_blank"
+                          >
+                            <img
+                              src="assets/img/virtual-keyboard.PNG"
+                              alt="Virtual-keyboard"
+                          /></a>
+                        </article>
+                        <article>
+                          <a
+                            href="https://grinch-ira.github.io/shelter/shelter/pages/main/"
+                            target="_blank"
+                            ><img src="assets/img/shelter.PNG" alt="Shelter"
+                          /></a>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="active__bottom">
+                    <div id="active">
+                      <label for="switch1"></label>
+                      <label for="switch2"></label>
+                      <label for="switch3"></label>
+                      <label for="switch4"></label>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer page-container" id="contacts">
         <div class="contacts-container container">
           <div class="contacts-body">
-            <div class="contacts-title page-title">Contacts</div>
+            <h2 class="contacts-title page-title">Contacts</h2>
             <div class="contacts-list">
               <div class="contacts-item contacts-email">
                 Email:
@@ -281,6 +361,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
