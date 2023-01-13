@@ -209,14 +209,18 @@
 }
 
 .js-certificate-link,
-.angular-certificate-link {
+.angular-certificate-link,
+.streamline-certificate-link,
+.leverx-certificate-link {
   font-size: 1.3em;
   font-weight: 700;
   color: #5f88db;
 }
 
 .js-certificate-link:hover,
-.angular-certificate-link:hover {
+.angular-certificate-link:hover,
+.streamline-certificate-link:hover,
+.leverx-certificate-link:hover {
   color: #094bd1;
   transition: 0.5s;
 }
@@ -259,9 +263,11 @@
   text-align: center;
   top: 50px;
 }
+
 #slider {
   margin: 0 auto;
 }
+
 #slider article {
   width: 20%;
   float: left;
@@ -271,6 +277,7 @@
   width: 500%;
   line-height: 0;
 }
+
 #overflow {
   width: 100%;
   overflow: hidden;
@@ -283,13 +290,16 @@ article img {
 #desctop:checked ~ #slider {
   max-width: 1180px;
 }
+
 label,
 a {
   cursor: pointer;
 }
+
 .slider-wrapper input {
   display: none;
 }
+
 .text {
   font-size: 20px;
 }
@@ -344,6 +354,7 @@ a {
   background: #faf9c9;
   border-color: rgb(207, 207, 207);
 }
+
 #active label:hover:active {
   background: #3d4961a2;
 }
